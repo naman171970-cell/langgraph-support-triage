@@ -1,8 +1,6 @@
 """
 Merchant Support Triage System - LangGraph Multi-Agent Application
 
-This script implements a support ticket triage workflow using LangGraph.
-Designed for use with LangGraph Studio - the compiled graph is assigned to `graph`.
 """
 
 import base64
@@ -249,3 +247,4 @@ workflow.add_edge("human_escalation_node", END)
 
 # Compile the graph for LangGraph Studio (must be assigned to variable named 'graph')
 graph = workflow.compile()
+
